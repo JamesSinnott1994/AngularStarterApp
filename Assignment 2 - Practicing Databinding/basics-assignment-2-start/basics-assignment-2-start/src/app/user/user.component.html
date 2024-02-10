@@ -1,0 +1,16 @@
+<h1>User</h1>
+
+<input
+type="text"
+label="Update User"
+[(ngModel)]="username"
+>
+
+<p> {{ this.username }}</p>
+
+<button
+[disabled]="username === ''"
+(click)="resetUsername()"
+>
+    Reset User
+</button>
