@@ -1,0 +1,13 @@
+div {
+    border: 2px solid black;
+}
+
+#button-div {
+    border: 0;
+    margin-left: 10px;
+}
+
+button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

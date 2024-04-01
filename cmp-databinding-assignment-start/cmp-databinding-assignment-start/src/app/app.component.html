@@ -15,3 +15,19 @@
     </div>
   </div>
 </div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <!-- Listen to "intervalFired" event -->
+    <!-- Remember! "$event" gives us access to the event data! -->
+    <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <!-- Can add "oddNumber" to component as we expose the "number" there, so we can bind to "number" -->
+    <!-- We pass "oddNumber" to our number -->
+    <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+    <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
+  </div>
+</div>
